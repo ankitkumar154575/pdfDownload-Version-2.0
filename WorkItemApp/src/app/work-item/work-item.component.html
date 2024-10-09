@@ -1,0 +1,153 @@
+<div class="container">
+  <h1>Work Item Details</h1>
+
+  <!-- Input section for ItemId -->
+  <div>
+    <label for="itemId">Enter Item ID:</label>
+    <input
+      type="text"
+      id="itemId"
+      [(ngModel)]="itemId"
+      placeholder="Enter ItemId"
+    />
+    <button (click)="preview()">Preview</button>
+  </div>
+
+  <!-- Modal for displaying selected work item details -->
+  <div *ngIf="showModal" class="modal">
+    <div class="modal-content">
+      <span (click)="closeModal()" class="close">&times;</span>
+      <h2>Details for Item ID: {{ itemId }}</h2>
+
+      <div id="pdfContent">
+        <!-- Work Item Details section -->
+        <div *ngIf="selectedWorkItem?.CosmicWorkItem" class="box">
+          <h3>Work Item Details:</h3>
+          <div class="work-item-details">
+            <div class="detail-box">
+              <span><strong>ItemId:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.ItemId }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>ItemDate:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.ItemDate }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>SendingBank:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.SendingBank }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>Step:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.Step }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>Owner:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.Owner }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>ParentCaseId:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.ParentCaseId }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>SharingCategory:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.SharingCategory }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>BusinessUnit:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.BusinessUnit }}</span>
+            </div>
+            <div class="detail-box">
+              <span><strong>TypeOfRisk:</strong></span>
+              <span>{{ selectedWorkItem.CosmicWorkItem.TypeOfRisk }}</span>
+            </div>
+          </div>
+
+          <!-- Checkbox for Work Item Details -->
+          <div>
+            <input
+              type="checkbox"
+              [(ngModel)]="workItemDetailsSelected"
+              id="details"
+              checked
+            />
+            <label for="details">Include Work Item Details in PDF</label>
+          </div>
+        </div>
+
+        <!-- Work Item Notes section -->
+        <div *ngIf="selectedWorkItem?.WorkItemNotes.length > 0" class="box">
+          <h3>Work Item Notes:</h3>
+          <div class="work-item-notes">
+            <div class="note-box" *ngFor="let note of selectedWorkItem.WorkItemNotes">
+              <div><strong>Note Date:</strong> {{ note.NoteDate }}</div>
+              <div><strong>Entered By:</strong> {{ note.EnteredBy }}</div>
+              <div><strong>Related Action:</strong> {{ note.RelatedAction }}</div>
+            </div>
+          </div>
+
+          <!-- Checkbox for Work Item Notes -->
+          <div>
+            <input
+              type="checkbox"
+              [(ngModel)]="workItemNotesSelected"
+              id="notes"
+              checked
+            />
+            <label for="notes">Include Work Item Notes in PDF</label>
+          </div>
+        </div>
+
+        <!-- Work Item Attachments section -->
+        <div *ngIf="selectedWorkItem?.WorkItemAttachments.length > 0" class="box">
+          <h3>Work Item Attachments:</h3>
+          <div class="work-item-attachments">
+            <div class="attachment-box" *ngFor="let attachment of selectedWorkItem.WorkItemAttachments">
+              <div><strong>File Name:</strong> {{ attachment.FileName }}</div>
+              <div><strong>Attach Date:</strong> {{ attachment.AttachDate }}</div>
+              <div><strong>Size (KB):</strong> {{ attachment.SizeKB }}</div>
+            </div>
+          </div>
+
+          <!-- Checkbox for Work Item Attachments -->
+          <div>
+            <input
+              type="checkbox"
+              [(ngModel)]="workItemAttachmentsSelected"
+              id="attachments"
+              checked
+            />
+            <label for="attachments">Include Work Item Attachments in PDF</label>
+          </div>
+        </div>
+
+        <!-- Work Item Audit History section -->
+        <div *ngIf="selectedWorkItem?.WorkItemAuditHistory.length > 0" class="box">
+          <h3>Work Item Audit History:</h3>
+          <div class="work-item-audit">
+            <div class="audit-box" *ngFor="let audit of selectedWorkItem.WorkItemAuditHistory">
+              <div><strong>Date:</strong> {{ audit.Date }}</div>
+              <div><strong>Action:</strong> {{ audit.Action }}</div>
+              <div><strong>Performed By:</strong> {{ audit.PerformedBy }}</div>
+            </div>
+          </div>
+
+          <!-- Checkbox for Work Item Audit History -->
+          <div>
+            <input
+              type="checkbox"
+              [(ngModel)]="workItemAuditHistorySelected"
+              id="auditHistory"
+              checked
+            />
+            <label for="auditHistory">Include Work Item Audit History in PDF</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action buttons (Download PDF and Close Modal) -->
+      <div>
+        <button (click)="downloadPDF()">Download PDF</button>
+      </div>
+    </div>
+  </div>
+</div>

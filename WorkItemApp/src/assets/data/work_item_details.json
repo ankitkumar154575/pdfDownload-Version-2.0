@@ -1,0 +1,188 @@
+[
+    {
+      "CosmicWorkItem": {
+        "ItemId": "ITEM001",
+        "ItemDate": "2023-01-10",
+        "SendingBank": "Bank A",
+        "Step": "Step 1",
+        "Owner": "Owner A",
+        "ParentCaseId": "CASE001",
+        "SharingCategory": "Category A",
+        "BusinessUnit": "Unit A",
+        "TypeOfRisk": "High"
+      },
+      "WorkItemNotes": [
+        {
+          "NoteDate": "2023-01-11",
+          "EnteredBy": "User A",
+          "RelatedAction": "Action A",
+          "Note": "This is a note for ITEM001."
+        }
+      ],
+      "WorkItemAttachments": [
+        {
+          "FileName": "document1.pdf",
+          "AttachDate": "2023-01-12",
+          "SizeKB": 120,
+          "AttachedFlag": true
+        }
+      ],
+      "WorkItemAuditHistory": [
+        {
+          "Date": "2023-01-13",
+          "Action": "Updated",
+          "PerformedBy": "User B",
+          "HistoryLine": "Work item details updated."
+        }
+      ]
+    },
+    {
+      "CosmicWorkItem": {
+        "ItemId": "ITEM002",
+        "ItemDate": "2023-02-10",
+        "SendingBank": "Bank B",
+        "Step": "Step 2",
+        "Owner": "Owner B",
+        "ParentCaseId": "CASE002",
+        "SharingCategory": "Category B",
+        "BusinessUnit": "Unit B",
+        "TypeOfRisk": "Medium"
+      },
+      "WorkItemNotes": [
+        {
+          "NoteDate": "2023-02-11",
+          "EnteredBy": "User C",
+          "RelatedAction": "Action B",
+          "Note": "This is a note for ITEM002."
+        }
+      ],
+      "WorkItemAttachments": [
+        {
+          "FileName": "document2.pdf",
+          "AttachDate": "2023-02-12",
+          "SizeKB": 150,
+          "AttachedFlag": true
+        }
+      ],
+      "WorkItemAuditHistory": [
+        {
+          "Date": "2023-02-13",
+          "Action": "Created",
+          "PerformedBy": "User D",
+          "HistoryLine": "Work item created."
+        }
+      ]
+    },
+    {
+      "CosmicWorkItem": {
+        "ItemId": "ITEM003",
+        "ItemDate": "2023-03-10",
+        "SendingBank": "Bank C",
+        "Step": "Step 3",
+        "Owner": "Owner C",
+        "ParentCaseId": "CASE003",
+        "SharingCategory": "Category C",
+        "BusinessUnit": "Unit C",
+        "TypeOfRisk": "Low"
+      },
+      "WorkItemNotes": [
+        {
+          "NoteDate": "2023-03-11",
+          "EnteredBy": "User E",
+          "RelatedAction": "Action C",
+          "Note": "This is a note for ITEM003."
+        }
+      ],
+      "WorkItemAttachments": [
+        {
+          "FileName": "document3.pdf",
+          "AttachDate": "2023-03-12",
+          "SizeKB": 200,
+          "AttachedFlag": true
+        }
+      ],
+      "WorkItemAuditHistory": [
+        {
+          "Date": "2023-03-13",
+          "Action": "Reviewed",
+          "PerformedBy": "User F",
+          "HistoryLine": "Work item reviewed."
+        }
+      ]
+    },
+    {
+      "CosmicWorkItem": {
+        "ItemId": "ITEM004",
+        "ItemDate": "2023-04-10",
+        "SendingBank": "Bank D",
+        "Step": "Step 4",
+        "Owner": "Owner D",
+        "ParentCaseId": "CASE004",
+        "SharingCategory": "Category D",
+        "BusinessUnit": "Unit D",
+        "TypeOfRisk": "High"
+      },
+      "WorkItemNotes": [
+        {
+          "NoteDate": "2023-04-11",
+          "EnteredBy": "User G",
+          "RelatedAction": "Action D",
+          "Note": "This is a note for ITEM004."
+        }
+      ],
+      "WorkItemAttachments": [
+        {
+          "FileName": "document4.pdf",
+          "AttachDate": "2023-04-12",
+          "SizeKB": 175,
+          "AttachedFlag": true
+        }
+      ],
+      "WorkItemAuditHistory": [
+        {
+          "Date": "2023-04-13",
+          "Action": "Closed",
+          "PerformedBy": "User H",
+          "HistoryLine": "Work item closed."
+        }
+      ]
+    },
+    {
+      "CosmicWorkItem": {
+        "ItemId": "ITEM005",
+        "ItemDate": "2023-05-10",
+        "SendingBank": "Bank E",
+        "Step": "Step 5",
+        "Owner": "Owner E",
+        "ParentCaseId": "CASE005",
+        "SharingCategory": "Category E",
+        "BusinessUnit": "Unit E",
+        "TypeOfRisk": "Medium"
+      },
+      "WorkItemNotes": [
+        {
+          "NoteDate": "2023-05-11",
+          "EnteredBy": "User I",
+          "RelatedAction": "Action E",
+          "Note": "This is a note for ITEM005."
+        }
+      ],
+      "WorkItemAttachments": [
+        {
+          "FileName": "document5.pdf",
+          "AttachDate": "2023-05-12",
+          "SizeKB": 100,
+          "AttachedFlag": true
+        }
+      ],
+      "WorkItemAuditHistory": [
+        {
+          "Date": "2023-05-13",
+          "Action": "Reviewed",
+          "PerformedBy": "User J",
+          "HistoryLine": "Work item reviewed."
+        }
+      ]
+    }
+  ]
+  
