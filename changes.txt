@@ -37,3 +37,17 @@
 5. Download in PDF: Upon clicking the "Download" button, the selected details are downloaded as a PDF file.
 
 6. PDF Format: The downloaded PDF is structured with the selected data in a predefined format.
+
+(Work Item Details, Work Item Notes, Work Item Attachments and Work Item Audit History) 
+Inside Work Item Details (Cosmic Work Item it contains (Item Id, Item Date, Sending Bank, Step, Owner, 
+Parent Case Id, Sharing Category, Business Unit, Type of Risk), (Cosmic case Item details it contains
+(Type of Risk, Closed Date, Sending Bank, Receiving Bank, Red Flags Identified, state, Focus Name, Focus Id, 
+Business Unit, Sharing Category, Comm Type, Direction from Citi, Mas Cosmic Id)), (Summary it contains 
+(Type of Risk, Sharing Category, Red Flags Identified, Sending Bank, Receiving Bank, Mas Cosmic Id)), 
+(Telephone Number it contains(Telephone Type, Country Code, Area code, Phone Number)), (Address it contains
+(Structured, Address Type, Country Code, Postal Code, city, Street Name, Building Name, Floor)), (Entity
+Accounts it contains(Account Number, Account Type, Account Open, Account Status, Account Clousure Date)), 
+(Transaction it contains(Transaction Reference Id, Transaction Date, Originater Name, Originater Acoount 
+Number, Originater Bank Name)), Inside Work Item Notes(Note Date, Entered By, Related Action and Note),
+Inside Work Item Attachments(File Name, Attach Date, Size(kb), Attached Flag) and Inside Work Item Audit 
+History(Date, Action, Performed By, History Line)
