@@ -24,3 +24,16 @@
     </button>
   </td>
 </tr>
+
+
+1. Print Work Item Button: A button labeled "Print Work Item" is available. Upon clicking this button, the user is redirected to the next page.
+
+2. Item ID Input and Preview: The user is prompted to enter the Item ID. After providing the ID, clicking the "Preview" button opens a pop-up.
+
+3. Pop-up with Item Details: The pop-up displays the details associated with the provided Item ID. A close button is available at the top. Below each detail, checkboxes allow the user to select which details to include in the download.
+
+4. Default Item Selection: All checkboxes are selected by default, and the user can manually check/uncheck specific items. A "Download" button is also present.
+
+5. Download in PDF: Upon clicking the "Download" button, the selected details are downloaded as a PDF file.
+
+6. PDF Format: The downloaded PDF is structured with the selected data in a predefined format.
